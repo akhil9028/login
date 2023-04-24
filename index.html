@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+      integrity="sha512-+7VwEoChc0gwtL8WovR9l9N/KYS0b/MBvF8WYQczffA08w3qzJv7jKgLnzR9ZI+MnGkNYn8BkWQ2fwy3wqCrxA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="loign.css" />
+  </head>
+
+  <body>
+    <div class="loginbox col-l-6">
+      <!-- <div class="container mt-5"> -->
+      <div class="row justify-content-center">
+        <div>
+          <div class="card">
+            <!-- <div class="card-header"> -->
+            <h4 class="text-center"><b>Student Login Form</b></h4>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="username">Username:</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="form-control"
+                />
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary btn-block submit"
+                onclick="validate()"
+              >
+                Submit
+              </button>
+
+              <input type="checkbox" id="" class="checkbox" /> <b>Rember me</b>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-LPUE6L72j6Z0htoZrnFifV1QjJdMKr/xBnF+1wDjKkIV8L+VKg7nXeTTF+yV7H/a/PpSbLNTiKtT00k4tQMiDg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"
+      integrity="sha512-Lz/NnFhUaCM6Q2Ly/8iwJbUjv5MxDAlifgzy9A8r/Pem81QzJ+vw1YBFRJgDkKjJH/MIVtTjT0c9qbSBU0zpVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- JavaScript code -->
+    <script>
+      function validate() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username == "admin" && password == "password") {
+          alert("Login successful!");
+        } else {
+          alert("Incorrect username or password.");
+        }
+      }
+    </script>
+  </body>
+</html>

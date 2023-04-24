@@ -1,0 +1,54 @@
+body{
+background-image: radial-gradient(rgb(94, 94, 253) , rgb(40, 141, 181),skyblue);
+
+}
+
+.loginbox{
+
+        padding:2% 5%;
+        box-shadow: 3px 3px 4px rgb(97, 112, 107) ;
+        
+        background-color: rgb(252, 252, 252);
+        
+            width: 35%; /* set the width of the container */
+            margin: 5% auto; /* center the container horizontally */
+            /* height: 180%; */
+         border-radius: 8px;
+        
+         position:relative;
+         bottom: 140%;
+
+}   
+
+.form-group{
+    margin-top: 5%;
+}
+.text-center{
+    margin-bottom: 15%;
+
+}
+.submit{
+    margin:10% 0%;
+}
+
+
+@media(max-width:995px){
+
+    .loginbox{
+
+        padding:10% 10%;
+        box-shadow: 3px 3px 4px rgb(97, 112, 107) ;
+        
+        background-color: rgb(252, 252, 252);
+        
+            width: 55%; /* set the width of the container */
+            margin: 40% auto; /* center the container horizontally */
+            /* height: 180%; */
+         border-radius: 8px;
+        
+         
+
+}   
+
+
+}
